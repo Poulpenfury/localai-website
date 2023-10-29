@@ -65,9 +65,9 @@ cp -rf prompt-templates/getting_started.tmpl models/luna-ai-llama2.tmpl
 # vim .env
 
 # start with docker compose
-docker compose up -d --pull always
+docker-compose up -d --pull always
 # or you can build the images with:
-# docker compose up -d --build
+# docker-compose up -d --build
 # Now API is accessible at localhost:8080
 curl http://localhost:8080/v1/models
 # {"object":"list","data":[{"id":"luna-ai-llama2","object":"model"}]}
